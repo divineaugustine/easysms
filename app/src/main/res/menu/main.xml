@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_Inbox" android:title="Inbox"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/action_Friends" android:title="Friends"
+        android:icon="@android:drawable/ic_menu_save"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/action_Unknown" android:title="Unknown"
+        android:icon="@android:drawable/ic_menu_call"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/action_Bulk" android:title="Bulk"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:icon="@android:drawable/ic_menu_set_as"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

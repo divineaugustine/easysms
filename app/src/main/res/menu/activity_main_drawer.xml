@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/mnuSentItem" android:icon="@android:drawable/ic_menu_send"
+            android:title="SentItems" />
+
+        <item android:id="@+id/mnuDraft" android:icon="@android:drawable/ic_menu_add"
+            android:title="Draft" />
+
+        <item android:id="@+id/mnuStar" android:icon="@android:drawable/ic_menu_compass"
+            android:title="Star" />
+
+        <item android:id="@+id/nav_manage" android:icon="@android:drawable/ic_menu_manage"
+            android:title="Tools" />
+
+        <item android:id="@+id/Search" android:icon="@android:drawable/ic_menu_search"
+            android:title="Search" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"
+                android:title="Share" />
+            <item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:orientation="vertical"
+android:background="@android:color/white"
+tools:context="com.example.divin_a.easysms.conversationactivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbluebg"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:id="@+id/edtNumber"
+            android:autoText="true"
+            android:inputType="phone|textAutoComplete"
+            android:scrollbars="vertical"
+            android:hint="number"
+            />
+
+        <Button android:text=""
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btAddNumber"
+            android:layout_weight="0"
+            android:layout_gravity="right"
+            />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_centerHorizontal="true" >
+        </SearchView>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lVNameList"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtName"
+            android:background="@drawable/roundbluebg"
+            android:scrollbars="vertical"
+            android:hint=""/>
+
+    </LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roundbluebg"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal" >
+
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:id="@+id/edtTOSend"
+        android:autoText="true"
+
+        android:inputType="textMultiLine|textShortMessage|textAutoComplete"
+        android:scrollbars="vertical"
+        android:hint="Type here to send"
+        />
+
+    <Button android:text="" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/btchuj"
+        android:layout_weight="3"
+        android:layout_gravity="bottom"
+        android:drawableLeft="@android:drawable/ic_media_play"
+        />
+</LinearLayout>
+
+</LinearLayout>

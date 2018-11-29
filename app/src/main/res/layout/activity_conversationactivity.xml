@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.example.divin_a.easysms.conversationactivity">
+
+
+    <ListView
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/listContact2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fastScrollEnabled="true"
+        android:layout_margin="1dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="normal"
+        android:listSelector="@android:color/transparent"
+        android:layout_weight="5"
+        android:divider="@null"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layer1_bg_hover"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:id="@+id/edtTOSend"
+        android:autoText="true"
+
+        android:inputType="textMultiLine|textShortMessage|textAutoComplete"
+        android:scrollbars="vertical"
+        android:hint="Type here to send"
+        />
+
+    <Button android:text="" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/btchuj"
+        android:layout_weight="3"
+        android:layout_gravity="bottom"
+        android:drawableLeft="@android:drawable/ic_media_play"
+        />
+    </LinearLayout>
+
+</LinearLayout>

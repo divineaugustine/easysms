@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+
+    android:padding="10dip" >
+
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/Msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Message content"
+        android:textColor="#000000"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:padding="2dp"
+        android:autoLink="web|email|phone"
+
+        android:shadowColor="#cebdce"
+        android:shadowRadius="2"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        />
+
+
+    <TextView
+        android:id="@+id/InOrOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Msg"
+        android:textColor="#000000"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:text="number"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:shadowColor="#cebdce"
+        android:shadowRadius="2"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        />
+
+    <!--
+
+        <TextView
+            android:id="@+id/ServiceCenter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Address"
+            android:textColor="#343434"
+            android:textSize="10dip"
+            android:layout_marginTop="1dip"
+            android:text="" />
+    -->
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/convDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="Date"
+        android:layout_marginRight="5dip"
+
+
+        android:layout_toRightOf="@+id/InOrOut"
+        android:layout_below="@+id/Data"
+
+        android:textStyle="bold"/>
+
+    <!-- Rightend Arrow
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+    -->
+</RelativeLayout>
